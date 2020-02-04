@@ -12,6 +12,7 @@ namespace BorwellSoftwareChallenge
         IAreaCalculator _areaCalculator;
         IVolumeCalculator _volumeCalculator;
         IParseDecimalFromInput _decimalParse;
+        IPaintCoverageCalculator _paintCalculator;
         string input;
 
         public Kernel()
@@ -19,7 +20,8 @@ namespace BorwellSoftwareChallenge
             //Instantiate Interface objects 
             _areaCalculator = new AreaCalculator();
             _volumeCalculator = new VolumeCalculator();
-            _decimalParse = new ParseDecimalFromInput();            
+            _decimalParse = new ParseDecimalFromInput();
+            _paintCalculator = new PaintCoverageCalculator();
         }
 
         public void Run()
@@ -52,9 +54,11 @@ namespace BorwellSoftwareChallenge
             decimal area = _areaCalculator.CalculateArea(width, length);
             decimal trueArea = area - (doorArea + windowArea);
             decimal volume = _volumeCalculator.CalculateVolume(width, length, height);
+            decimal paintRequired = _paintCalculator.calculateCoverage(trueArea);
 
             Console.WriteLine("The total area of your room is: {0}m²", area);
-            Console.WriteLine("The true area of your room is: {0}m²", trueArea);
+            Console.WriteLine("The total area needing to be painted is: {0}m²", trueArea);
+            Console.WriteLine("This would require {0} litres of paint for a single coat", paintRequired);
             Console.WriteLine("The volume of your room is: {0}m³", volume);
         }
     }

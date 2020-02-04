@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AreaCalculator.cs" />
+    <Compile Include="IPaintCoverageCalculator.cs" />
+    <Compile Include="PaintCoverageCalculator.cs" />
     <Compile Include="ParseDecimalFromInput.cs" />
     <Compile Include="IAreaCalculator.cs" />
     <Compile Include="IParseDecimalFromInput.cs" />
