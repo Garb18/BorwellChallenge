@@ -17,3 +17,9 @@ C:\Users\bened\Documents\University\Year02\Borwell\BorwellSoftwareChallenge\Borw
 C:\Users\bened\Documents\University\Year02\Borwell\BorwellSoftwareChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.csprojAssemblyReference.cache
 C:\Users\bened\Documents\University\Year02\Borwell\BorwellSoftwareChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.exe
 C:\Users\bened\Documents\University\Year02\Borwell\BorwellSoftwareChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.pdb
+D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\BorwellSoftwareChallenge.exe.config
+D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\BorwellSoftwareChallenge.exe
+D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\BorwellSoftwareChallenge.pdb
+D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.csprojAssemblyReference.cache
+D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.exe
+D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.pdb

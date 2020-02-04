@@ -12,20 +12,21 @@ namespace BorwellSoftwareChallenge
         IAreaCalculator _areaCalculator;
         IVolumeCalculator _volumeCalculator;
         IParseDecimalFromInput _decimalParse;
+        string input;
 
         public Kernel()
         {
-            //Instantiate area calculator
+            //Instantiate Interface objects 
             _areaCalculator = new AreaCalculator();
             _volumeCalculator = new VolumeCalculator();
-            _decimalParse = new ParseDecimalFromInput();
+            _decimalParse = new ParseDecimalFromInput();            
         }
 
         public void Run()
         {
             Console.Write("Please input the length of your room in metres: ");
 
-            string input = Console.ReadLine();
+            input = Console.ReadLine();
             decimal length = _decimalParse.ParseDecimal(input);
             
             Console.Write("Please input the width of your room in metres: ");
@@ -38,12 +39,10 @@ namespace BorwellSoftwareChallenge
             input = Console.ReadLine();
             decimal height = _decimalParse.ParseDecimal(input);
 
-
             Console.Write("Please input the area of your doors in m²: ");
 
             input = Console.ReadLine();
             decimal doorArea = _decimalParse.ParseDecimal(input);
-
 
             Console.Write("Please input the area of your windows in m²: ");
 
