@@ -8,7 +8,7 @@ Borwell Software Challenge attempt 2020
 ## To Do:
   - [x] Initial Commit
   - [x] Implement Unit Test
-  - [ ] Finialise Unit Tests
+  - [x] Finialise Unit Tests
   - [ ] Implement all required interfaces
   - [ ] Implement all required calculation classes
   - [ ] Implement all required defensive programming measures
