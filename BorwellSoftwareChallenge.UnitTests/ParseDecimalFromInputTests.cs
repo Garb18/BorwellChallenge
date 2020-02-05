@@ -17,11 +17,10 @@ namespace BorwellSoftwareChallenge.UnitTests
             //Arrange
             IParseDecimalFromInput _parse = new ParseDecimalFromInput();
             string input;
-            decimal output;
 
             //Act
             input = "5";
-            output = _parse.ParseDecimal(input);
+            var output = _parse.ParseDecimal(input);
 
             //Assert
             Assert.IsTrue(output.GetType() == typeof(decimal), "decimal outputted");
