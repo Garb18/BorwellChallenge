@@ -18,6 +18,17 @@ Write a program that takes as input the dimensions of a room and outputs the fol
   - Visual Studio 2019 Community
   - .NET 4.8
   
+## Assumptions:
+   - The user has at least one door and one window
+   - The user knows all imputs in the Metric system
+   - The room is rectangular
+   
+## How to use:
+   - Clone/Download project
+   - Extract contents
+   - Open BorwellSoftwareChallenge.sln in Visual Studio
+   - Click run
+
 ## To Do:
   - [x] Initial Commit
   - [x] Implement Unit Test
