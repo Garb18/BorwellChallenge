@@ -5,7 +5,7 @@ using BorwellSoftwareChallenge.Interfaces;
 namespace BorwellSoftwareChallenge.UnitTests
 {
     [TestClass]
-    public class ParseDecimalFromInputTests
+    public class ParseFromInputTests
     {
         /* <Summary>
          * Ensures a decimal is returned from string input
@@ -15,7 +15,7 @@ namespace BorwellSoftwareChallenge.UnitTests
         public void Parse_Input_Returns_Decimal()
         {
             //Arrange
-            IParseDecimalFromInput _parse = new ParseDecimalFromInput();
+            IParseFromInput _parse = new ParseFromInput();
             string input;
 
             //Act
@@ -34,7 +34,7 @@ namespace BorwellSoftwareChallenge.UnitTests
         public void Parse_Input_Returns_Decimal_Accurately()
         {
             //Arrange
-            IParseDecimalFromInput _parse = new ParseDecimalFromInput();
+            IParseFromInput _parse = new ParseFromInput();
             string input = "5243.5315678465477777771";
             int precision = 0;
 
