@@ -70,8 +70,8 @@ namespace BorwellSoftwareChallenge
                 }
             
                 //Output results of calculations with context
-                Console.WriteLine("The total area of your room is: {0}m²", String.Format("{0:n}", area));
-                Console.WriteLine("The total area needing to be painted is: {0}m²", String.Format("{0:n}", trueArea));
+                Console.WriteLine("The floor area of your room is: {0}m²", String.Format("{0:n}", area));
+                Console.WriteLine("The wall area needing to be painted is: {0}m²", String.Format("{0:n}", trueArea));
                 Console.WriteLine("This would require {0} litres of paint for a single coat", String.Format("{0:n}", paintRequired));
                 Console.WriteLine("The volume of your room is: {0}m³", String.Format("{0:n}", volume));
 
