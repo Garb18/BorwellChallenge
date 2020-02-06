@@ -53,6 +53,7 @@
     <Compile Include="AreaCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ParseDecimalFromInputTests.cs" />
+    <Compile Include="PaintCoverageCalculatorTests.cs" />
     <Compile Include="VolumeCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>

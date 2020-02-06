@@ -7,7 +7,7 @@ using BorwellSoftwareChallenge.Interfaces;
 
 namespace BorwellSoftwareChallenge
 {
-    class PaintCoverageCalculator : IPaintCoverageCalculator
+    public class PaintCoverageCalculator : IPaintCoverageCalculator
     {
         public PaintCoverageCalculator() 
         {
@@ -16,6 +16,7 @@ namespace BorwellSoftwareChallenge
 
         public decimal calculateCoverage(decimal pInput) 
         {
+            //Based on B&Qs wall painting calculator, found here: https://www.diy.com/help-advice/wall-painting-calculator/Dev_npcart_100008.art
             decimal coverage = pInput / 10;
 
             return coverage;

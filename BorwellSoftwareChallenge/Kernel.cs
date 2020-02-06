@@ -13,7 +13,7 @@ namespace BorwellSoftwareChallenge
         IVolumeCalculator _volumeCalculator;
         IParseDecimalFromInput _decimalParse;
         IPaintCoverageCalculator _paintCalculator;
-        string input;
+        char restart = 'Y';
 
         public Kernel()
         {
@@ -26,40 +26,45 @@ namespace BorwellSoftwareChallenge
 
         public void Run()
         {
-            Console.Write("Please input the length of your room in metres: ");
+            do
+            {
+                //Get user input, and parse into decimal
+                Console.Write("Please input the length of your room in metres: ");
+                decimal length = _decimalParse.ParseDecimal(Console.ReadLine());
 
-            input = Console.ReadLine();
-            decimal length = _decimalParse.ParseDecimal(input);
-            
-            Console.Write("Please input the width of your room in metres: ");
+                Console.Write("Please input the width of your room in metres: ");
+                decimal width = _decimalParse.ParseDecimal(Console.ReadLine());
 
-            input = Console.ReadLine();
-            decimal width = _decimalParse.ParseDecimal(input);
-            
-            Console.Write("Please input the height of your room in metres: ");
+                Console.Write("Please input the height of your room in metres: ");
+                decimal height = _decimalParse.ParseDecimal(Console.ReadLine());
 
-            input = Console.ReadLine();
-            decimal height = _decimalParse.ParseDecimal(input);
+                Console.Write("Please input the area of your doors in m²: ");
+                decimal doorArea = _decimalParse.ParseDecimal(Console.ReadLine());
 
-            Console.Write("Please input the area of your doors in m²: ");
+                Console.Write("Please input the area of your windows in m²: ");
+                decimal windowArea = _decimalParse.ParseDecimal(Console.ReadLine());
 
-            input = Console.ReadLine();
-            decimal doorArea = _decimalParse.ParseDecimal(input);
+                //Perform calculations from user inputs
+                decimal area = _areaCalculator.CalculateArea(width, length);
+                decimal trueArea = area - (doorArea + windowArea);
+                decimal volume = _volumeCalculator.CalculateVolume(width, length, height);
+                decimal paintRequired = _paintCalculator.calculateCoverage(trueArea);
 
-            Console.Write("Please input the area of your windows in m²: ");
+                //Output results of calculations with context
+                Console.WriteLine("The total area of your room is: {0}m²", area);
+                Console.WriteLine("The total area needing to be painted is: {0}m²", trueArea);
+                Console.WriteLine("This would require {0} litres of paint for a single coat", paintRequired);
+                Console.WriteLine("The volume of your room is: {0}m³", volume);
 
-            input = Console.ReadLine();
-            decimal windowArea = _decimalParse.ParseDecimal(input);
+                Console.WriteLine("Do you wish to calculate another? (Y/N)");
+                restart = Console.ReadKey().KeyChar;
+                while ((!restart.Equals('Y')) && (!restart.Equals('N')))                   {
+                    Console.WriteLine("Error");
+                    Console.WriteLine("Do you wish to calculate another? (YES/NO) ");
+                    restart = restart = Console.ReadKey().KeyChar;
+                }
 
-            decimal area = _areaCalculator.CalculateArea(width, length);
-            decimal trueArea = area - (doorArea + windowArea);
-            decimal volume = _volumeCalculator.CalculateVolume(width, length, height);
-            decimal paintRequired = _paintCalculator.calculateCoverage(trueArea);
-
-            Console.WriteLine("The total area of your room is: {0}m²", area);
-            Console.WriteLine("The total area needing to be painted is: {0}m²", trueArea);
-            Console.WriteLine("This would require {0} litres of paint for a single coat", paintRequired);
-            Console.WriteLine("The volume of your room is: {0}m³", volume);
+        } while (restart.Equals('Y')); 
         }
     }
 }

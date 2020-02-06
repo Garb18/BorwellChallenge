@@ -23,3 +23,10 @@ D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\Borwell
 D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.csprojAssemblyReference.cache
 D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.exe
 D:\Users\Ben\Desktop\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.pdb
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\BorwellSoftwareChallenge.exe.config
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\BorwellSoftwareChallenge.exe
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\bin\Debug\BorwellSoftwareChallenge.pdb
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.csprojAssemblyReference.cache
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.csproj.CoreCompileInputs.cache
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.exe
+C:\Users\garb1_18\Documents\GitHub\BorwellChallenge\BorwellSoftwareChallenge\obj\Debug\BorwellSoftwareChallenge.pdb
