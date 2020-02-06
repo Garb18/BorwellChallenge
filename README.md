@@ -25,3 +25,4 @@ Write a program that takes as input the dimensions of a room and outputs the fol
   - [x] Implement all required interfaces
   - [x] Implement all required calculation classes
   - [x] Implement all required defensive programming measures
+  - [x] Finalise Kernel design
