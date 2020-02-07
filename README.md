@@ -21,6 +21,7 @@ Write a program that takes as input the dimensions of a room and outputs the fol
 ## Assumptions:
    - The user has at least one door and one window
    - The user knows all imputs in the Metric system
+   - The user knows the square area of their windows and doors
    - The room is rectangular
    
 ## How to use:
